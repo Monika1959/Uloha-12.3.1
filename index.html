@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function years(){
+
+            for(let i = 1990; i < 2031; i++){
+
+                let vypis = i;
+                
+                if(((i % 100 === 0) ? (i % 400 === 0) : (i % 4 === 0))){
+                    vypis = "P " + vypis;
+                }
+                if(i % 10 == "0") {
+                    vypis = "O " + vypis;
+                }
+                if(i == 1992){
+                    vypis = "N " + vypis;
+                }
+
+                console.log(vypis);
+            }
+        }
+         years();
+
+    </script>
+    
+</body>
+</html>
